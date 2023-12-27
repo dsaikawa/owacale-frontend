@@ -21,14 +21,6 @@ const ComedianInformation = ({ withMoreLive = true, displayCount }: ComedianInfo
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.md})`);
   return (
     <>
-      <Group justify="space-between">
-        <Title order={4}>お笑い芸人情報</Title>
-        {withMoreLive && (
-          <Anchor href="/comedian" c="dark" underline="always">
-            <Text fw={600}>もっと見る</Text>
-          </Anchor>
-        )}
-      </Group>
       <Grid gutter="lg">
         <LiveCards displayCount={displayCount ? displayCount : mobile ? 2 : 3} />
       </Grid>

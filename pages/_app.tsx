@@ -13,6 +13,7 @@ import {
 } from '@mantine/core';
 import { useDisclosure, useMediaQuery } from '@mantine/hooks';
 import { theme } from '../theme';
+import '@mantine/carousel/styles.css';
 
 export default function App({ Component, pageProps }: AppProps) {
   const [opened, { toggle }] = useDisclosure();

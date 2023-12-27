@@ -3,6 +3,9 @@ import Hero from '@/components/Hero/Hero';
 import LiveInformation from '@/components/Live/LiveInformation';
 import { SearchInput } from '@/components/Search/SearchInput';
 import ComedianInformation from '@/components/Comedian/ComediansInformation';
+import ComedianScroller from '@/components/Comedian/ComedianScroller';
+import AreaTitle from '@/components/common/AreaTitle';
+import LiveScroller from '@/components/Live/LiveScroller';
 
 export default function HomePage() {
   return (
@@ -10,8 +13,10 @@ export default function HomePage() {
       <Stack>
         <Hero />
         <SearchInput />
-        <ComedianInformation />
-        <LiveInformation />
+        <AreaTitle title="お笑い芸人情報" moreInfoHref="/comedian" />
+        <ComedianScroller />
+        <AreaTitle title="ライブ情報" moreInfoHref="/live" />
+        <LiveScroller />
       </Stack>
     </>
   );
